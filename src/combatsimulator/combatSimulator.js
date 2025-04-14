@@ -1,23 +1,24 @@
 import CombatUtilities from "./combatUtilities";
+import AbilityCastEndEvent from "./events/abilityCastEndEvent";
 import AutoAttackEvent from "./events/autoAttackEvent";
-import DamageOverTimeEvent from "./events/damageOverTimeEvent";
+import AwaitCooldownEvent from "./events/awaitCooldownEvent";
+import BlindExpirationEvent from "./events/blindExpirationEvent";
 import CheckBuffExpirationEvent from "./events/checkBuffExpirationEvent";
+import CombatRestartEvent from "./events/combatRestartEvent";
 import CombatStartEvent from "./events/combatStartEvent";
 import ConsumableTickEvent from "./events/consumableTickEvent";
 import CooldownReadyEvent from "./events/cooldownReadyEvent";
+import CurseExpirationEvent from "./events/curseExpirationEvent";
+import DamageOverTimeEvent from "./events/damageOverTimeEvent";
 import EnemyRespawnEvent from "./events/enemyRespawnEvent";
 import EventQueue from "./events/eventQueue";
 import PlayerRespawnEvent from "./events/playerRespawnEvent";
 import RegenTickEvent from "./events/regenTickEvent";
-import StunExpirationEvent from "./events/stunExpirationEvent";
-import BlindExpirationEvent from "./events/blindExpirationEvent";
 import SilenceExpirationEvent from "./events/silenceExpirationEvent";
-import CurseExpirationEvent from "./events/curseExpirationEvent";
+import StunExpirationEvent from "./events/stunExpirationEvent";
 import WeakenExpirationEvent from "./events/weakenExpirationEvent";
-import SimResult from "./simResult";
-import AbilityCastEndEvent from "./events/abilityCastEndEvent";
-import AwaitCooldownEvent from "./events/awaitCooldownEvent";
 import Monster from "./monster";
+import SimResult from "./simResult";
 
 const ONE_SECOND = 1e9;
 const HOT_TICK_INTERVAL = 5 * ONE_SECOND;
@@ -37,18 +38,26 @@ class CombatSimulator extends EventTarget {
         this.allPlayersDead = false;
     }
 
-    async simulate(simulationTimeLimit) {
+    async simulate(simulationTimeLimit, enableAttackTimes = false, attackTimes = 9) {
         this.reset();
 
         let ticks = 0;
+        let lastEncounters = 0;
 
         let combatStartEvent = new CombatStartEvent(0);
         this.eventQueue.addEvent(combatStartEvent);
 
         while (this.simulationTime < simulationTimeLimit) {
-            let nextEvent = this.eventQueue.getNextEvent();
-            await this.processEvent(nextEvent);
-
+              if (enableAttackTimes && this.simResult.encounters > 0 && lastEncounters != this.simResult.encounters && this.simResult.encounters % attackTimes == 0) {
+                // console.log("连续攻击次数", this.simResult.encounters);
+                lastEncounters = this.simResult.encounters;
+                let combatRestartEvent = new CombatRestartEvent(this.simulationTime);
+                this.eventQueue.clear();
+                await this.processEvent(combatRestartEvent);
+            } else {
+                let nextEvent = this.eventQueue.getNextEvent();
+                await this.processEvent(nextEvent);
+            }
             ticks++;
             if (ticks == 1000) {
                 ticks = 0;
@@ -109,6 +118,9 @@ class CombatSimulator extends EventTarget {
             case CombatStartEvent.type:
                 this.processCombatStartEvent(event);
                 break;
+            case CombatRestartEvent.type:
+                this.processCombatRestartEvent(event);
+                break;
             case PlayerRespawnEvent.type:
                 this.processPlayerRespawnEvent(event);
                 break;
@@ -158,6 +170,18 @@ class CombatSimulator extends EventTarget {
         }
 
         this.checkTriggers();
+    }
+
+    processCombatRestartEvent(event) {
+        this.zone.encountersKilled = 1;
+        for (let i = 0; i < this.players.length; i++) {
+            // this.players[i].generatePermanentBuffs();
+            this.players[i].reset(this.simulationTime);
+        }
+        let regenTickEvent = new RegenTickEvent(this.simulationTime + REGEN_TICK_INTERVAL);
+        this.eventQueue.addEvent(regenTickEvent);
+        this.startNewEncounter();
+        // this.startAttacks();
     }
 
     processCombatStartEvent(event) {

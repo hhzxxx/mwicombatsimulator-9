@@ -1474,24 +1474,22 @@ var __webpack_exports__ = {};
   !*** ./src/main.js ***!
   \*********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _combatsimulator_equipment_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./combatsimulator/equipment.js */ "./src/combatsimulator/equipment.js");
-/* harmony import */ var _combatsimulator_player_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./combatsimulator/player.js */ "./src/combatsimulator/player.js");
+/* harmony import */ var _combatsimulator_ability_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./combatsimulator/ability.js */ "./src/combatsimulator/ability.js");
+/* harmony import */ var _combatsimulator_consumable_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./combatsimulator/consumable.js */ "./src/combatsimulator/consumable.js");
 /* harmony import */ var _combatsimulator_data_abilityDetailMap_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./combatsimulator/data/abilityDetailMap.json */ "./src/combatsimulator/data/abilityDetailMap.json");
-/* harmony import */ var _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./combatsimulator/data/itemDetailMap.json */ "./src/combatsimulator/data/itemDetailMap.json");
-/* harmony import */ var _combatsimulator_data_houseRoomDetailMap_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./combatsimulator/data/houseRoomDetailMap.json */ "./src/combatsimulator/data/houseRoomDetailMap.json");
-/* harmony import */ var _combatsimulator_ability_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./combatsimulator/ability.js */ "./src/combatsimulator/ability.js");
-/* harmony import */ var _combatsimulator_consumable_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./combatsimulator/consumable.js */ "./src/combatsimulator/consumable.js");
-/* harmony import */ var _combatsimulator_houseRoom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./combatsimulator/houseRoom */ "./src/combatsimulator/houseRoom.js");
-/* harmony import */ var _combatsimulator_data_combatTriggerDependencyDetailMap_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./combatsimulator/data/combatTriggerDependencyDetailMap.json */ "./src/combatsimulator/data/combatTriggerDependencyDetailMap.json");
-/* harmony import */ var _combatsimulator_data_combatTriggerConditionDetailMap_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./combatsimulator/data/combatTriggerConditionDetailMap.json */ "./src/combatsimulator/data/combatTriggerConditionDetailMap.json");
-/* harmony import */ var _combatsimulator_data_combatTriggerComparatorDetailMap_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./combatsimulator/data/combatTriggerComparatorDetailMap.json */ "./src/combatsimulator/data/combatTriggerComparatorDetailMap.json");
-/* harmony import */ var _combatsimulator_data_abilitySlotsLevelRequirementList_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./combatsimulator/data/abilitySlotsLevelRequirementList.json */ "./src/combatsimulator/data/abilitySlotsLevelRequirementList.json");
-/* harmony import */ var _combatsimulator_data_actionDetailMap_json__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./combatsimulator/data/actionDetailMap.json */ "./src/combatsimulator/data/actionDetailMap.json");
-/* harmony import */ var _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./combatsimulator/data/combatMonsterDetailMap.json */ "./src/combatsimulator/data/combatMonsterDetailMap.json");
-/* harmony import */ var _combatsimulator_data_damageTypeDetailMap_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./combatsimulator/data/damageTypeDetailMap.json */ "./src/combatsimulator/data/damageTypeDetailMap.json");
-/* harmony import */ var _combatsimulator_data_combatStyleDetailMap_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./combatsimulator/data/combatStyleDetailMap.json */ "./src/combatsimulator/data/combatStyleDetailMap.json");
-/* harmony import */ var _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./combatsimulator/data/openableLootDropMap.json */ "./src/combatsimulator/data/openableLootDropMap.json");
-
+/* harmony import */ var _combatsimulator_data_abilitySlotsLevelRequirementList_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./combatsimulator/data/abilitySlotsLevelRequirementList.json */ "./src/combatsimulator/data/abilitySlotsLevelRequirementList.json");
+/* harmony import */ var _combatsimulator_data_actionDetailMap_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./combatsimulator/data/actionDetailMap.json */ "./src/combatsimulator/data/actionDetailMap.json");
+/* harmony import */ var _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./combatsimulator/data/combatMonsterDetailMap.json */ "./src/combatsimulator/data/combatMonsterDetailMap.json");
+/* harmony import */ var _combatsimulator_data_combatStyleDetailMap_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./combatsimulator/data/combatStyleDetailMap.json */ "./src/combatsimulator/data/combatStyleDetailMap.json");
+/* harmony import */ var _combatsimulator_data_combatTriggerComparatorDetailMap_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./combatsimulator/data/combatTriggerComparatorDetailMap.json */ "./src/combatsimulator/data/combatTriggerComparatorDetailMap.json");
+/* harmony import */ var _combatsimulator_data_combatTriggerConditionDetailMap_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./combatsimulator/data/combatTriggerConditionDetailMap.json */ "./src/combatsimulator/data/combatTriggerConditionDetailMap.json");
+/* harmony import */ var _combatsimulator_data_combatTriggerDependencyDetailMap_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./combatsimulator/data/combatTriggerDependencyDetailMap.json */ "./src/combatsimulator/data/combatTriggerDependencyDetailMap.json");
+/* harmony import */ var _combatsimulator_data_damageTypeDetailMap_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./combatsimulator/data/damageTypeDetailMap.json */ "./src/combatsimulator/data/damageTypeDetailMap.json");
+/* harmony import */ var _combatsimulator_data_houseRoomDetailMap_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./combatsimulator/data/houseRoomDetailMap.json */ "./src/combatsimulator/data/houseRoomDetailMap.json");
+/* harmony import */ var _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./combatsimulator/data/itemDetailMap.json */ "./src/combatsimulator/data/itemDetailMap.json");
+/* harmony import */ var _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./combatsimulator/data/openableLootDropMap.json */ "./src/combatsimulator/data/openableLootDropMap.json");
+/* harmony import */ var _combatsimulator_equipment_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./combatsimulator/equipment.js */ "./src/combatsimulator/equipment.js");
+/* harmony import */ var _combatsimulator_player_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./combatsimulator/player.js */ "./src/combatsimulator/player.js");
 
 
 
@@ -1517,7 +1515,7 @@ let progressbar = document.getElementById("simulationProgressBar");
 
 let worker = new Worker(new URL(/* worker import */ __webpack_require__.p + __webpack_require__.u("src_worker_js"), __webpack_require__.b));
 
-let player = new _combatsimulator_player_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+let player = new _combatsimulator_player_js__WEBPACK_IMPORTED_MODULE_15__["default"]();
 let selectedPlayers = [];
 let main_food = [null, null, null];
 let main_drinks = [null, null, null];
@@ -1592,7 +1590,7 @@ function initEquipmentSelect(equipmentType) {
     }
     let selectElement = document.getElementById(selectId);
 
-    let gameEquipment = Object.values(_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__)
+    let gameEquipment = Object.values(_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__)
         .filter((item) => item.categoryHrid == "/item_categories/equipment")
         .filter((item) => item.equipmentDetail.type == "/equipment_types/" + equipmentType)
         .sort((a, b) => a.sortIndex - b.sortIndex);
@@ -1611,7 +1609,7 @@ function initEquipmentSelect(equipmentType) {
 function initHouseRoomsModal() {
     let houseRoomsList = document.getElementById("houseRoomsList");
     let newChildren = [];
-    let houseRooms = Object.values(_combatsimulator_data_houseRoomDetailMap_json__WEBPACK_IMPORTED_MODULE_4__).sort((a, b) => a.sortIndex - b.sortIndex);
+    let houseRooms = Object.values(_combatsimulator_data_houseRoomDetailMap_json__WEBPACK_IMPORTED_MODULE_11__).sort((a, b) => a.sortIndex - b.sortIndex);
     player.houseRooms = {};
 
     for (const room of Object.values(houseRooms)) {
@@ -1676,7 +1674,7 @@ function equipmentSelectHandler(event, type) {
         return;
     }
 
-    let gameItem = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[event.target.value];
+    let gameItem = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[event.target.value];
 
     // Weapon select has two handlers because of mainhand and twohand weapons. Ignore the handler with the wrong type
     if (gameItem.equipmentDetail.type != equipmentType) {
@@ -1717,7 +1715,7 @@ function updateEquipmentState() {
             return;
         }
 
-        let gameItem = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[equipmentHrid];
+        let gameItem = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[equipmentHrid];
 
         // Clear old weapon if a weapon of a different type is equipped
         if (gameItem.equipmentDetail.type != equipmentType) {
@@ -1726,7 +1724,7 @@ function updateEquipmentState() {
         }
 
         let enhancementLevel = Number(document.getElementById("inputEquipmentEnhancementLevel_" + selectType).value);
-        player.equipment[equipmentType] = new _combatsimulator_equipment_js__WEBPACK_IMPORTED_MODULE_0__["default"](gameItem.hrid, enhancementLevel);
+        player.equipment[equipmentType] = new _combatsimulator_equipment_js__WEBPACK_IMPORTED_MODULE_14__["default"](gameItem.hrid, enhancementLevel);
     });
 }
 
@@ -1795,10 +1793,10 @@ function updateCombatStatsUI() {
     let combatStyleElement = document.getElementById("combatStat_combatStyleHrid");
     let combatStyle = player.combatDetails.combatStats.combatStyleHrid;
     combatStyleElement.setAttribute("data-i18n", "combatStyleNames."+combatStyle);
-    combatStyleElement.innerHTML = _combatsimulator_data_combatStyleDetailMap_json__WEBPACK_IMPORTED_MODULE_15__[combatStyle].name;
+    combatStyleElement.innerHTML = _combatsimulator_data_combatStyleDetailMap_json__WEBPACK_IMPORTED_MODULE_6__[combatStyle].name;
 
     let damageTypeElement = document.getElementById("combatStat_damageType");
-    let damageType = _combatsimulator_data_damageTypeDetailMap_json__WEBPACK_IMPORTED_MODULE_14__[player.combatDetails.combatStats.damageType];
+    let damageType = _combatsimulator_data_damageTypeDetailMap_json__WEBPACK_IMPORTED_MODULE_10__[player.combatDetails.combatStats.damageType];
     damageTypeElement.setAttribute("data-i18n", "damageTypeNames."+damageType.hrid);
     damageTypeElement.innerHTML = damageType.name;
 
@@ -1913,7 +1911,7 @@ function initFoodSection() {
     for (let i = 0; i < 3; i++) {
         let element = document.getElementById("selectFood_" + i);
 
-        let gameFoods = Object.values(_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__)
+        let gameFoods = Object.values(_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__)
             .filter((item) => item.categoryHrid == "/item_categories/food")
             .sort((a, b) => a.sortIndex - b.sortIndex);
 
@@ -1937,7 +1935,7 @@ function updateFoodState() {
         let foodSelect = document.getElementById("selectFood_" + i);
         main_food[i] = foodSelect.value;
         if (main_food[i] && !triggerMap[main_food[i]]) {
-            let gameItem = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[main_food[i]];
+            let gameItem = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[main_food[i]];
             triggerMap[main_food[i]] = structuredClone(gameItem.consumableDetail.defaultCombatTriggers);
         }
     }
@@ -1961,7 +1959,7 @@ function initDrinksSection() {
     for (let i = 0; i < 3; i++) {
         let element = document.getElementById("selectDrink_" + i);
 
-        let gameDrinks = Object.values(_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__)
+        let gameDrinks = Object.values(_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__)
             .filter((item) => item.categoryHrid == "/item_categories/drink")
             .filter((item) => item.consumableDetail.usableInActionTypeMap["/action_types/combat"])
             .sort((a, b) => a.sortIndex - b.sortIndex);
@@ -1986,7 +1984,7 @@ function updateDrinksState() {
         let drinkSelect = document.getElementById("selectDrink_" + i);
         main_drinks[i] = drinkSelect.value;
         if (main_drinks[i] && !triggerMap[main_drinks[i]]) {
-            let gameItem = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[main_drinks[i]];
+            let gameItem = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[main_drinks[i]];
             triggerMap[main_drinks[i]] = structuredClone(gameItem.consumableDetail.defaultCombatTriggers);
         }
     }
@@ -2053,9 +2051,9 @@ function updateAbilityUI() {
         let inputElement = document.getElementById("inputAbilityLevel_" + i);
         let triggerButton = document.getElementById("buttonAbilityTrigger_" + i);
 
-        selectElement.disabled = player.intelligenceLevel < _combatsimulator_data_abilitySlotsLevelRequirementList_json__WEBPACK_IMPORTED_MODULE_11__[i + 1];
-        inputElement.disabled = player.intelligenceLevel < _combatsimulator_data_abilitySlotsLevelRequirementList_json__WEBPACK_IMPORTED_MODULE_11__[i + 1];
-        triggerButton.disabled = player.intelligenceLevel < _combatsimulator_data_abilitySlotsLevelRequirementList_json__WEBPACK_IMPORTED_MODULE_11__[i + 1] || !main_abilities[i];
+        selectElement.disabled = player.intelligenceLevel < _combatsimulator_data_abilitySlotsLevelRequirementList_json__WEBPACK_IMPORTED_MODULE_3__[i + 1];
+        inputElement.disabled = player.intelligenceLevel < _combatsimulator_data_abilitySlotsLevelRequirementList_json__WEBPACK_IMPORTED_MODULE_3__[i + 1];
+        triggerButton.disabled = player.intelligenceLevel < _combatsimulator_data_abilitySlotsLevelRequirementList_json__WEBPACK_IMPORTED_MODULE_3__[i + 1] || !main_abilities[i];
     }
 }
 
@@ -2178,7 +2176,7 @@ function triggerDefaultButtonHandler(event) {
     let triggerTarget = triggerTargetnput.value;
 
     if (triggerTarget.startsWith("/items/")) {
-        modalTriggers = structuredClone(_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[triggerTarget].consumableDetail.defaultCombatTriggers);
+        modalTriggers = structuredClone(_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[triggerTarget].consumableDetail.defaultCombatTriggers);
     } else {
         modalTriggers = structuredClone(_combatsimulator_data_abilityDetailMap_json__WEBPACK_IMPORTED_MODULE_2__[triggerTarget].defaultCombatTriggers);
     }
@@ -2248,7 +2246,7 @@ function updateTriggerModal() {
 
         triggerComparatorSelect.value = modalTriggers[i].comparatorHrid;
 
-        if (_combatsimulator_data_combatTriggerComparatorDetailMap_json__WEBPACK_IMPORTED_MODULE_10__[modalTriggers[i].comparatorHrid].allowValue) {
+        if (_combatsimulator_data_combatTriggerComparatorDetailMap_json__WEBPACK_IMPORTED_MODULE_7__[modalTriggers[i].comparatorHrid].allowValue) {
             showElement(triggerValueInput);
             triggerValueInput.value = modalTriggers[i].value;
         } else {
@@ -2266,7 +2264,7 @@ function fillTriggerDependencySelect(element) {
     element.length = 0;
     element.add(new Option("", ""));
 
-    for (const dependency of Object.values(_combatsimulator_data_combatTriggerDependencyDetailMap_json__WEBPACK_IMPORTED_MODULE_8__).sort(
+    for (const dependency of Object.values(_combatsimulator_data_combatTriggerDependencyDetailMap_json__WEBPACK_IMPORTED_MODULE_9__).sort(
         (a, b) => a.sortIndex - b.sortIndex
     )) {
         let opt = new Option(dependency.name, dependency.hrid);
@@ -2276,13 +2274,13 @@ function fillTriggerDependencySelect(element) {
 }
 
 function fillTriggerConditionSelect(element, dependencyHrid) {
-    let dependency = _combatsimulator_data_combatTriggerDependencyDetailMap_json__WEBPACK_IMPORTED_MODULE_8__[dependencyHrid];
+    let dependency = _combatsimulator_data_combatTriggerDependencyDetailMap_json__WEBPACK_IMPORTED_MODULE_9__[dependencyHrid];
 
     let conditions;
     if (dependency.isSingleTarget) {
-        conditions = Object.values(_combatsimulator_data_combatTriggerConditionDetailMap_json__WEBPACK_IMPORTED_MODULE_9__).filter((condition) => condition.isSingleTarget);
+        conditions = Object.values(_combatsimulator_data_combatTriggerConditionDetailMap_json__WEBPACK_IMPORTED_MODULE_8__).filter((condition) => condition.isSingleTarget);
     } else {
-        conditions = Object.values(_combatsimulator_data_combatTriggerConditionDetailMap_json__WEBPACK_IMPORTED_MODULE_9__).filter((condition) => condition.isMultiTarget);
+        conditions = Object.values(_combatsimulator_data_combatTriggerConditionDetailMap_json__WEBPACK_IMPORTED_MODULE_8__).filter((condition) => condition.isMultiTarget);
     }
 
     element.length = 0;
@@ -2296,9 +2294,9 @@ function fillTriggerConditionSelect(element, dependencyHrid) {
 }
 
 function fillTriggerComparatorSelect(element, conditionHrid) {
-    let condition = _combatsimulator_data_combatTriggerConditionDetailMap_json__WEBPACK_IMPORTED_MODULE_9__[conditionHrid];
+    let condition = _combatsimulator_data_combatTriggerConditionDetailMap_json__WEBPACK_IMPORTED_MODULE_8__[conditionHrid];
 
-    let comparators = condition.allowedComparatorHrids.map((hrid) => _combatsimulator_data_combatTriggerComparatorDetailMap_json__WEBPACK_IMPORTED_MODULE_10__[hrid]);
+    let comparators = condition.allowedComparatorHrids.map((hrid) => _combatsimulator_data_combatTriggerComparatorDetailMap_json__WEBPACK_IMPORTED_MODULE_7__[hrid]);
 
     element.length = 0;
     element.add(new Option("", ""));
@@ -2328,7 +2326,7 @@ function initZones() {
     let zoneSelect = document.getElementById("selectZone");
 
     // TOOD dungeon wave spawns
-    let gameZones = Object.values(_combatsimulator_data_actionDetailMap_json__WEBPACK_IMPORTED_MODULE_12__)
+    let gameZones = Object.values(_combatsimulator_data_actionDetailMap_json__WEBPACK_IMPORTED_MODULE_4__)
         .filter((action) => action.type == "/action_types/combat" && action.category != "/action_categories/combat/dungeons")
         .sort((a, b) => a.sortIndex - b.sortIndex);
 
@@ -2342,7 +2340,7 @@ function initZones() {
 function initDungeons() {
     let dungeonSelect = document.getElementById("selectDungeon");
 
-    let gameDungeons = Object.values(_combatsimulator_data_actionDetailMap_json__WEBPACK_IMPORTED_MODULE_12__)
+    let gameDungeons = Object.values(_combatsimulator_data_actionDetailMap_json__WEBPACK_IMPORTED_MODULE_4__)
         .filter((action) => action.type == "/action_types/combat" && action.category == "/action_categories/combat/dungeons")
         .sort((a, b) => a.sortIndex - b.sortIndex);
 
@@ -2451,15 +2449,15 @@ function getDropProfit(simResult, playerToDisplay) {
     for (const monster of monsters) {
         const dropMap = new Map();
         const rareDropMap = new Map();
-        if(_combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[monster].dropTable) {
-            for (const drop of _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[monster].dropTable) {
+        if(_combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[monster].dropTable) {
+            for (const drop of _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[monster].dropTable) {
                 if (drop.minEliteTier > simResult.eliteTier) {
                     continue;
                 }
                 dropMap.set(drop.itemHrid, { "dropRate": Math.min(1, drop.dropRate * dropRateMultiplier), "number": 0, "dropMin": drop.minCount, "dropMax": drop.maxCount, "noRngDropAmount": 0 });
             }
-            if(_combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[monster].rareDropTable)
-            for (const drop of _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[monster].rareDropTable) {
+            if(_combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[monster].rareDropTable)
+            for (const drop of _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[monster].rareDropTable) {
                 if (drop.minEliteTier > simResult.eliteTier) {
                     continue;
                 }
@@ -2745,22 +2743,22 @@ function showKills(simResult, playerToDisplay) {
         let killsPerHour = (simResult.deaths[monster] / hoursSimulated).toFixed(1);
         let monsterRow = createRow(
             ["col-md-6", "col-md-6 text-end"],
-            [_combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[monster].name, killsPerHour]
+            [_combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[monster].name, killsPerHour]
         );
         monsterRow.firstElementChild.setAttribute("data-i18n", "monsterNames."+monster);
         newChildren.push(monsterRow);
 
         const dropMap = new Map();
         const rareDropMap = new Map();
-        if(_combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[monster].dropTable)
-        for (const drop of _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[monster].dropTable) {
+        if(_combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[monster].dropTable)
+        for (const drop of _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[monster].dropTable) {
             if (drop.minEliteTier > simResult.eliteTier) {
                 continue;
             }
             dropMap.set(drop.itemHrid, { "dropRate": Math.min(1, drop.dropRate * dropRateMultiplier), "number": 0, "dropMin": drop.minCount, "dropMax": drop.maxCount, "noRngDropAmount": 0 });
         }
-        if(_combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[monster].rareDropTable)
-        for (const drop of _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[monster].rareDropTable) {
+        if(_combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[monster].rareDropTable)
+        for (const drop of _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[monster].rareDropTable) {
             if (drop.minEliteTier > simResult.eliteTier) {
                 continue;
             }
@@ -3001,7 +2999,7 @@ function showConsumablesUsed(simResult, playerToDisplay) {
         let consumablesPerHour = (amount / hoursSimulated).toFixed(0);
         let consumableRow = createRow(
             ["col-md-6", "col-md-6 text-end"],
-            [_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[consumable].name, consumablesPerHour]
+            [_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[consumable].name, consumablesPerHour]
         );
         consumableRow.firstElementChild.setAttribute("data-i18n", "itemNames."+consumable);
         newChildren.push(consumableRow);
@@ -3117,8 +3115,8 @@ function showHitpointsGained(simResult, playerToDisplay) {
                 sourceFullHrid = "combatStats.lifeSteal";
                 break;
             default:
-                if (_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[source]) {
-                    sourceText = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[source].name;
+                if (_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[source]) {
+                    sourceText = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[source].name;
                     sourceFullHrid = "itemNames."+source;
                 } else if (_combatsimulator_data_abilityDetailMap_json__WEBPACK_IMPORTED_MODULE_2__[source]) {
                     sourceText = _combatsimulator_data_abilityDetailMap_json__WEBPACK_IMPORTED_MODULE_2__[source].name;
@@ -3179,7 +3177,7 @@ function showManapointsGained(simResult, playerToDisplay) {
                 sourceFullHrid = "combatStats.manaLeech";
                 break;
             default:
-                sourceText = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[source].name;
+                sourceText = _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[source].name;
                 sourceFullHrid = "itemNames."+source;
                 break;
         }
@@ -3259,7 +3257,7 @@ function showDamageDone(simResult, playerToDisplay) {
         let resultAccordionButton = document.getElementById(
             "buttonSimulationResultDamageDoneAccordionEnemy" + enemyIndex
         );
-        let targetName = _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[target].name;
+        let targetName = _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[target].name;
         resultAccordionButton.innerHTML = "<b><span data-i18n=\"common:simulationResults.damageDone\">Damage Done</span> (" + "<span data-i18n=\"monsterNames." + target +"\">" + targetName + "</span>" + ")</b>";
 
         if (simResult.bossSpawns.includes(target)) {
@@ -3336,7 +3334,7 @@ function showDamageTaken(simResult, playerToDisplay) {
         let resultAccordionButton = document.getElementById(
             "buttonSimulationResultDamageTakenAccordionEnemy" + enemyIndex
         );
-        let sourceName = _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_13__[source].name;
+        let sourceName = _combatsimulator_data_combatMonsterDetailMap_json__WEBPACK_IMPORTED_MODULE_5__[source].name;
         resultAccordionButton.innerHTML = "<b><span data-i18n=\"common:simulationResults.damageTaken\">Damage Taken</span> (" + "<span data-i18n=\"monsterNames." + source +"\">" + sourceName + "</span>" + ")</b>";
 
         enemyIndex++;
@@ -3552,14 +3550,14 @@ function startSimulation(selectedPlayers) {
             player.hrid = "player" + j.toString();
             for (let i = 0; i < 3; i++) {
                 if (main_food[i] && i < player.combatDetails.combatStats.foodSlots) {
-                    let consumable = new _combatsimulator_consumable_js__WEBPACK_IMPORTED_MODULE_6__["default"](main_food[i], triggerMap[main_food[i]]);
+                    let consumable = new _combatsimulator_consumable_js__WEBPACK_IMPORTED_MODULE_1__["default"](main_food[i], triggerMap[main_food[i]]);
                     player.food[i] = consumable;
                 } else {
                     player.food[i] = null;
                 }
 
                 if (main_drinks[i] && i < player.combatDetails.combatStats.drinkSlots) {
-                    let consumable = new _combatsimulator_consumable_js__WEBPACK_IMPORTED_MODULE_6__["default"](main_drinks[i], triggerMap[main_drinks[i]]);
+                    let consumable = new _combatsimulator_consumable_js__WEBPACK_IMPORTED_MODULE_1__["default"](main_drinks[i], triggerMap[main_drinks[i]]);
                     player.drinks[i] = consumable;
                 } else {
                     player.drinks[i] = null;
@@ -3567,9 +3565,9 @@ function startSimulation(selectedPlayers) {
             }
 
             for (let i = 0; i < 5; i++) {
-                if (main_abilities[i] && player.intelligenceLevel >= _combatsimulator_data_abilitySlotsLevelRequirementList_json__WEBPACK_IMPORTED_MODULE_11__[i + 1]) {
+                if (main_abilities[i] && player.intelligenceLevel >= _combatsimulator_data_abilitySlotsLevelRequirementList_json__WEBPACK_IMPORTED_MODULE_3__[i + 1]) {
                     let abilityLevelInput = document.getElementById("inputAbilityLevel_" + i);
-                    let ability = new _combatsimulator_ability_js__WEBPACK_IMPORTED_MODULE_5__["default"](main_abilities[i], Number(abilityLevelInput.value), triggerMap[main_abilities[i]]);
+                    let ability = new _combatsimulator_ability_js__WEBPACK_IMPORTED_MODULE_0__["default"](main_abilities[i], Number(abilityLevelInput.value), triggerMap[main_abilities[i]]);
                     player.abilities[i] = ability;
                 } else {
                     player.abilities[i] = null;
@@ -3588,6 +3586,9 @@ function startSimulation(selectedPlayers) {
     let dungeonSelect = document.getElementById("selectDungeon");
     let simulationTimeInput = document.getElementById("inputSimulationTime");
     let simulationTimeLimit = Number(simulationTimeInput.value) * ONE_HOUR;
+
+    let enableAttackTimes = document.getElementById("enableAttackTimes").checked;
+    let attackTimes = Number(document.getElementById("inputAttackTimes").value);
     if(!simAllZonesToggle.checked) {
         let zoneHrid = zoneSelect.value;
         if (simDungeonToggle.checked) {
@@ -3598,10 +3599,12 @@ function startSimulation(selectedPlayers) {
             players: playersToSim,
             zoneHrid: zoneHrid,
             simulationTimeLimit: simulationTimeLimit,
+            enableAttackTimes: enableAttackTimes,
+            attackTimes: attackTimes,
         };
         worker.postMessage(workerMessage);
     } else {
-        let zoneHrids = Object.values(_combatsimulator_data_actionDetailMap_json__WEBPACK_IMPORTED_MODULE_12__)
+        let zoneHrids = Object.values(_combatsimulator_data_actionDetailMap_json__WEBPACK_IMPORTED_MODULE_4__)
         .filter((action) => action.type == "/action_types/combat" && action.category != "/action_categories/combat/dungeons" && action.combatZoneInfo.fightInfo.battlesPerBoss === 10)
         .sort((a, b) => a.sortIndex - b.sortIndex)
         .map(action => action.hrid);
@@ -3852,7 +3855,7 @@ function loadEquipmentSetIntoUI(equipmentSet) {
         }
         player.houseRooms = equipmentSet.houseRooms;
     } else {
-        let houseRooms = Object.values(_combatsimulator_data_houseRoomDetailMap_json__WEBPACK_IMPORTED_MODULE_4__);
+        let houseRooms = Object.values(_combatsimulator_data_houseRoomDetailMap_json__WEBPACK_IMPORTED_MODULE_11__);
         for (const room of Object.values(houseRooms)) {
             const field = document.querySelector('[data-house-hrid="' + room.hrid + '"]');
             field.value = '';
@@ -4087,7 +4090,7 @@ function doSoloImport() {
         }
         player.houseRooms = importSet.houseRooms;
     } else {
-        let houseRooms = Object.values(_combatsimulator_data_houseRoomDetailMap_json__WEBPACK_IMPORTED_MODULE_4__);
+        let houseRooms = Object.values(_combatsimulator_data_houseRoomDetailMap_json__WEBPACK_IMPORTED_MODULE_11__);
         for (const room of Object.values(houseRooms)) {
             const field = document.querySelector('[data-house-hrid="' + room.hrid + '"]');
             field.value = '';
@@ -4245,7 +4248,7 @@ function updateNextPlayer(currentPlayerNumber) {
         }
         player.houseRooms = importSet.houseRooms;
     } else {
-        let houseRooms = Object.values(_combatsimulator_data_houseRoomDetailMap_json__WEBPACK_IMPORTED_MODULE_4__);
+        let houseRooms = Object.values(_combatsimulator_data_houseRoomDetailMap_json__WEBPACK_IMPORTED_MODULE_11__);
         for (const room of Object.values(houseRooms)) {
             const field = document.querySelector('[data-house-hrid="' + room.hrid + '"]');
             field.value = '';
@@ -4303,48 +4306,48 @@ async function fetchPrices() {
 
         const priceTmp = pricesJson['market'];
         window.prices = {};
-        for (const item in _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__)
+        for (const item in _combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__)
         {
-            if (_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[item].name in priceTmp)
+            if (_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[item].name in priceTmp)
             {
-                window.prices[_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[item].hrid] = priceTmp[_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_3__[item].name];
+                window.prices[_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[item].hrid] = priceTmp[_combatsimulator_data_itemDetailMap_json__WEBPACK_IMPORTED_MODULE_12__[item].name];
             }
         }
 
         window.prices["/items/coin"] = { "ask": 1, "bid": 1, "vendor": 1 };
 
         window.prices["/items/small_treasure_chest"] = {
-            "ask": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_16__["/items/small_treasure_chest"].map((item) => {
+            "ask": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_13__["/items/small_treasure_chest"].map((item) => {
                 return item.itemHrid in window.prices ? window.prices[item.itemHrid].ask * item.dropRate * (item.maxCount + item.minCount) / 2 : 0;
             }).reduce((a, b) => a + b, 0),
-            "bid": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_16__["/items/small_treasure_chest"].map((item) => {
+            "bid": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_13__["/items/small_treasure_chest"].map((item) => {
                 return item.itemHrid in window.prices ? window.prices[item.itemHrid].bid * item.dropRate * (item.maxCount + item.minCount) / 2 : 0;
             }).reduce((a, b) => a + b, 0),
-            "vendor": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_16__["/items/small_treasure_chest"].map((item) => {
+            "vendor": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_13__["/items/small_treasure_chest"].map((item) => {
                 return item.itemHrid in window.prices? window.prices[item.itemHrid].vendor : 0;
             }).reduce((a, b) => a + b, 0),
         };
 
         window.prices["/items/medium_treasure_chest"] = {
-            "ask": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_16__["/items/medium_treasure_chest"].map((item) => {
+            "ask": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_13__["/items/medium_treasure_chest"].map((item) => {
                 return item.itemHrid in window.prices ? window.prices[item.itemHrid].ask * item.dropRate * (item.maxCount + item.minCount) / 2 : 0;
             }).reduce((a, b) => a + b, 0),
-            "bid": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_16__["/items/medium_treasure_chest"].map((item) => {
+            "bid": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_13__["/items/medium_treasure_chest"].map((item) => {
                 return item.itemHrid in window.prices ? window.prices[item.itemHrid].bid * item.dropRate * (item.maxCount + item.minCount) / 2 : 0;
             }).reduce((a, b) => a + b, 0),
-            "vendor": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_16__["/items/medium_treasure_chest"].map((item) => {
+            "vendor": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_13__["/items/medium_treasure_chest"].map((item) => {
                 return item.itemHrid in window.prices? window.prices[item.itemHrid].vendor : 0;
             }).reduce((a, b) => a + b, 0),
         };
 
         window.prices["/items/large_treasure_chest"] = {
-            "ask": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_16__["/items/large_treasure_chest"].map((item) => {
+            "ask": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_13__["/items/large_treasure_chest"].map((item) => {
                 return item.itemHrid in window.prices ? window.prices[item.itemHrid].ask * item.dropRate * (item.maxCount + item.minCount) / 2 : 0;
             }).reduce((a, b) => a + b, 0),
-            "bid": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_16__["/items/large_treasure_chest"].map((item) => {
+            "bid": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_13__["/items/large_treasure_chest"].map((item) => {
                 return item.itemHrid in window.prices ? window.prices[item.itemHrid].bid * item.dropRate * (item.maxCount + item.minCount) / 2 : 0;
             }).reduce((a, b) => a + b, 0),
-            "vendor": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_16__["/items/large_treasure_chest"].map((item) => {
+            "vendor": _combatsimulator_data_openableLootDropMap_json__WEBPACK_IMPORTED_MODULE_13__["/items/large_treasure_chest"].map((item) => {
                 return item.itemHrid in window.prices? window.prices[item.itemHrid].vendor : 0;
             }).reduce((a, b) => a + b, 0),
         };

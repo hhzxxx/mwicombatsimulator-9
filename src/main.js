@@ -1,20 +1,19 @@
-import Equipment from "./combatsimulator/equipment.js";
-import Player from "./combatsimulator/player.js";
-import abilityDetailMap from "./combatsimulator/data/abilityDetailMap.json";
-import itemDetailMap from "./combatsimulator/data/itemDetailMap.json";
-import houseRoomDetailMap from "./combatsimulator/data/houseRoomDetailMap.json";
 import Ability from "./combatsimulator/ability.js";
 import Consumable from "./combatsimulator/consumable.js";
-import HouseRoom from "./combatsimulator/houseRoom"
-import combatTriggerDependencyDetailMap from "./combatsimulator/data/combatTriggerDependencyDetailMap.json";
-import combatTriggerConditionDetailMap from "./combatsimulator/data/combatTriggerConditionDetailMap.json";
-import combatTriggerComparatorDetailMap from "./combatsimulator/data/combatTriggerComparatorDetailMap.json";
+import abilityDetailMap from "./combatsimulator/data/abilityDetailMap.json";
 import abilitySlotsLevelRequirementList from "./combatsimulator/data/abilitySlotsLevelRequirementList.json";
 import actionDetailMap from "./combatsimulator/data/actionDetailMap.json";
 import combatMonsterDetailMap from "./combatsimulator/data/combatMonsterDetailMap.json";
-import damageTypeDetailMap from "./combatsimulator/data/damageTypeDetailMap.json";
 import combatStyleDetailMap from "./combatsimulator/data/combatStyleDetailMap.json";
+import combatTriggerComparatorDetailMap from "./combatsimulator/data/combatTriggerComparatorDetailMap.json";
+import combatTriggerConditionDetailMap from "./combatsimulator/data/combatTriggerConditionDetailMap.json";
+import combatTriggerDependencyDetailMap from "./combatsimulator/data/combatTriggerDependencyDetailMap.json";
+import damageTypeDetailMap from "./combatsimulator/data/damageTypeDetailMap.json";
+import houseRoomDetailMap from "./combatsimulator/data/houseRoomDetailMap.json";
+import itemDetailMap from "./combatsimulator/data/itemDetailMap.json";
 import openableLootDropMap from "./combatsimulator/data/openableLootDropMap.json";
+import Equipment from "./combatsimulator/equipment.js";
+import Player from "./combatsimulator/player.js";
 
 const ONE_SECOND = 1e9;
 const ONE_HOUR = 60 * 60 * ONE_SECOND;
@@ -2095,6 +2094,9 @@ function startSimulation(selectedPlayers) {
     let dungeonSelect = document.getElementById("selectDungeon");
     let simulationTimeInput = document.getElementById("inputSimulationTime");
     let simulationTimeLimit = Number(simulationTimeInput.value) * ONE_HOUR;
+
+    let enableAttackTimes = document.getElementById("enableAttackTimes").checked;
+    let attackTimes = Number(document.getElementById("inputAttackTimes").value);
     if(!simAllZonesToggle.checked) {
         let zoneHrid = zoneSelect.value;
         if (simDungeonToggle.checked) {
@@ -2105,6 +2107,8 @@ function startSimulation(selectedPlayers) {
             players: playersToSim,
             zoneHrid: zoneHrid,
             simulationTimeLimit: simulationTimeLimit,
+            enableAttackTimes: enableAttackTimes,
+            attackTimes: attackTimes,
         };
         worker.postMessage(workerMessage);
     } else {

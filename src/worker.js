@@ -38,7 +38,7 @@ onmessage = async function (event) {
             });
 
             try {
-                let simResult = await combatSimulator.simulate(simulationTimeLimit);
+                let simResult = await combatSimulator.simulate(simulationTimeLimit, event.data.enableAttackTimes, event.data.attackTimes);
                 this.postMessage({ type: "simulation_result", simResult: simResult });
             } catch (e) {
                 console.log(e);
