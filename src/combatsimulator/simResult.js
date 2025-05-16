@@ -16,6 +16,7 @@ class SimResult {
             "player4" : false,
             "player5" : false
         };
+        this.playerRanOutOfManaTime = {};
         this.manaUsed = {};
         this.timeSpentAlive = [];
         this.bossSpawns = [];
@@ -24,6 +25,7 @@ class SimResult {
         this.zoneName = zoneName;
         this.isDungeon = false;
         this.dungeonsCompleted = 0;
+        this.dungeonsFailed = 0;
         this.maxWaveReached = 0;
         this.numberOfPlayers = numberOfPlayers;
     }
@@ -43,12 +45,13 @@ class SimResult {
                 this.timeSpentAlive[i].alive = true;
                 this.timeSpentAlive[i].spawnedAt = time;
             } else {
-                this.timeSpentAlive.push({ name: name, timeSpentAlive: 0, spawnedAt: time, alive: true });
+                this.timeSpentAlive.push({ name: name, timeSpentAlive: 0, spawnedAt: time, alive: true, count: 0 });
             }
         } else {
             const timeAlive = time - this.timeSpentAlive[i].spawnedAt;
             this.timeSpentAlive[i].alive = false;
             this.timeSpentAlive[i].timeSpentAlive += timeAlive;
+            this.timeSpentAlive[i].count += 1;
         }
     }
 
@@ -154,6 +157,18 @@ class SimResult {
         }
 
         this.hitpointsSpent[unit.hrid][source] += amount;
+    }
+
+    addRanOutOfManaCount(unit, isRunOutOfMana){
+        if (!this.playerRanOutOfManaTime[unit.hrid]) {
+            this.playerRanOutOfManaTime[unit.hrid] = [0, 0];
+        }
+        if (isRunOutOfMana) {
+            this.playerRanOutOfMana[unit.hrid] = true;
+            this.playerRanOutOfManaTime[unit.hrid][0] += 1;
+        } else {
+            this.playerRanOutOfManaTime[unit.hrid][1] += 1;
+        }
     }
 }
 
